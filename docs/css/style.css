@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+:root {
+    --font: 'Mooli', sans-serif;
+}
+
+body {
+    background: linear-gradient(30deg, lightgreen, #fccc63, #e95950, #d540a6 );
+	background-size: 450% 450%;
+	animation: gradient 40s ease-in-out infinite;
+    font-family: 'Mooli', sans-serif;
+    user-select: none;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.theme-light {
+    --color-main: #fff;
+    --color-text: #fff;
+}
+
+#photo {
+    width: 210px;
+    height: 210px;
+    display: block;
+    margin: 8px auto 13px;
+    border-radius: 90%;
+}
+
+#name {
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    display: block;
+    font-family: 'Mooli';
+    width: 77%;
+    text-align: center;
+}
+
+#title {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#linksbutton {
+    max-width: 580px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
+}
+
+.links {
+    background-color: rgba(255, 255, 255, 0.0 );
+    color: var(--color-text);
+    font-family: var(--font);
+    text-align: center;
+    display:inline-block;
+    vertical-align:top;
+    margin-bottom: 2%;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all .25s cubic-bezier(.08, .59, .29, .99);
+    border: solid var(--color-main) 2px;
+    border-radius: 15px;
+}
+
+.links:hover {
+    background-color: #fff;
+    color: #000;
+    border: solid var(--color-main) 2px;
+    transition: .1s;
+}
+
+.links span {
+    display: inline-block;
+    position: relative;
+    bottom: 1.3em;
+    margin-left: 2%;
+}
+
+.gears {
+    width: auto;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.gear {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.0 );
+    color: var(--color-text);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all .25s cubic-bezier(.08, .59, .29, .99);
+    border: solid var(--color-main) 2px;
+}
+
+.gear:hover {
+    background-color: #fff;
+    color: #000;
+    border: solid var(--color-main) 2px;
+}
+
+#footertext {
+    color: var(--color-main);
+    font-size: 0.6em;
+    font-weight: 300;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#footertext a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#footertext a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    height: 10%;
+    width: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background: linear-gradient(60deg,lightgreen, #fccc63, #e95950, #e732ae );
+        background-size: 450% 450%;
+	    animation: gradient 10s ease-in-out infinite;
+    }
+    .links span {
+        display: inline-block;
+        position: relative;
+        bottom: 0.7em;
+    }
+    #name {
+        font-size: 1em;
+    }
+}
