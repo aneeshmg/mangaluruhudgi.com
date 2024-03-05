@@ -17,7 +17,7 @@ URL:
 
 /* SITE */
 
-Last update: 2023/09/26
+Last update: 2024/03/05
 Standards: HTML5, CSS3.
 Components: Javascript
-Software: vim, Google Chrome, Firefox, VSCode
+Software: vim, Google Chrome, Firefox, VSCode, zsh
